@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Damion&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="/assets/logo.png" alt="optimFirst" />
+          <div class="logo-text">OptimFirst</div>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav id="nav">
+          <a href="">HOME</a>
+          <a href="">ABOUT US</a>
+          <a href="">SERVICES</a>
+          <a href="">CONTACT</a>
+        </nav>
+      </div>
+      <div class="nav-multiMedia">
+        <div class="multiMedia-main-content">
+          <h2 class="first-heading">Multimedia Solutions</h2>
+          <h2 class="second-heading">Smart Multimedia Services</h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <p class="small-screen-desc">
+            Discover the most talented candidates & freelancers.
+          </p>
+        </div>
+
+        <p class="multimedia-footer">
+          Pre-selected and screened by our professional consultants.
+        </p>
+        <p class="small-screen-footer">Pre-selected and screened.</p>
+      </div>
+    </header>
+    <main>
+      <!-- registration form -->
+      <div class="registration-form">
+        <h1 class="registration-form-heading">let’s get started !</h1>
+        <p>Take part in pre-launch registration for FREE life time account.</p>
+        <form action="#" method="POST" onsubmit="return validateForm();">
+          <select name="Select-service" id="select-service">
+            <option value="">Select Service</option>
+          </select>
+          <div style="position: relative;">
+            <input type="text" name="fname" id="fname" placeholder="Firstname" />
+            <div id="fname-error" class="error-message"></div>
+          </div>
+          <div style="position: relative;">
+            <input type="text" name="lname" id="lname" placeholder="Lastname" />
+            <div id="lname-error" class="error-message"></div>
+          </div>
+          <div style="position: relative;">
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <div id="email-error" class="error-message"></div>
+          </div>
+          <p>By registering, you agree to the T&C.</p>
+          <input type="submit" value="REGISTER" />
+        </form>
+      </div>
+      <!-- top quality talent -->
+      
+      <div class="top-quality-talent">
+        <div class="inner-top-quality-talent">
+          <h1>TOP QUALITY TALENT</h1>
+          <p>or incididunt ut labore et dolore magna</p>
+          <p class="top-quality-talent-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="slider">
+            <div class="eclipse" onclick="changeSlide(0)"></div>
+            <div class="eclipse" onclick="changeSlide(1)"></div>
+          </div>
+        </div>
+      </div>
+      <!-- About us -->
+      <section id="about-us">
+        <div class="about-us-container">
+          <h1>ABOUT US</h1>
+          <p class="about-us-container-p1">
+            finding the right freelancer for your project
+          </p>
+          <div class="about-options">
+            <div class="about-more-options">registration</div>
+            <div class="about-more-options about-about-us">About us</div>
+          </div>
+          <div class="about-content">
+            <div class="about-content-inner">
+              <p class="about-content-heading">
+                You will soon be part of an exciting new and growing community!
+              </p>
+
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco.
+              </p>
+              <ul>
+                <li>FREE Lifetime Membership</li>
+                <li>DISCOUNTS on Premium Services</li>
+                <li>FREE invitation to various events & parties</li>
+              </ul>
+              <p>
+                By registering during the pre-launch period you qualify for the
+                above but have no obligation to subscribe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-us">
+        <div class="contact-us-container">
+          <h1>Contact Us</h1>
+          <p class="about-us-container-p1">
+            every day, every week working for you
+          </p>
+          <form action="#" method="POST" target="_blank" onsubmit="return validateContactForm();">
+            <div class="form-content">
+              <div class="left-part">
+                <div style="position: relative;">
+                  <input type="text" placeholder="Firstname" id="contact-fname"/>
+                  <div class="error-message" id="contact-fname-error"></div>
+                </div>
+                <div style="position: relative;">
+                  <input type="text" placeholder="Lastname" id="contact-lname"/>
+                  <div class="error-message" id="contact-lname-error"></div>
+                </div>
+                <div style="position: relative;">
+                  <input type="email" placeholder="Email address" id="contact-email"/>
+                  <div class="error-message" id="contact-email-error"></div>
+                </div>
+              </div>
+              <div class="right-part">
+                <div style="position: relative;">
+                  <textarea name="message" cols="30" rows="10" placeholder="Message" id="contact-message"></textarea>
+                  <div class="error-message" id="contact-message-error"></div>
+                </div>
+              </div>
+            </div>
+            <input type="submit" class="contact-submit" value="SEND" />
+          </form>
+        </div>
+      </section>
+      <!-- call for action -->
+      <div class="call-for-action">
+        <p>TAKE PART IN PRE-LAUNCH REGISTRATION AND GET FREE LIFETIME MEMBERSHIP</p>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        Copyright © 2023 optimfirst.com
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
